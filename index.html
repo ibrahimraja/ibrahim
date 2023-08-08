@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="demo" onclick="sara()">string print</button>
+    <button id="demo1" onclick="click1()">Length</button>
+    <button id="demo2" onclick="click2()">Click</button>
+    <button id="demo3" onclick="click3()">Concat</button>
+    <button id="demo4" onclick="click4()">Slice</button>
+  </body>
+  <script>
+    // string
+    let data = { name: 'raja', age: '29' };
+    function sara() {
+      document.getElementById('demo').innerHTML = data.name;
+    }
+    // string length
+    let raja = 'raja';
+    let raj = raja.length;
+    function click1() {
+      document.getElementById('demo1').innerHTML = raj;
+    }
+    // string concat
+    let txt1 = 'raja';
+    let txt2 = 'sara';
+    let text3 = txt1.concat(" ", txt2);
+    function click3() {
+      document.getElementById('demo3').innerHTML = text3;
+    }
+
+    // string slice 
+
+    let text1 ="raja love sara";
+    let text2 = text1.slice(-0,-9);
+    function click4() {
+    document.getElementById('demo4').innerHTML=text2;
+    }
+  </script>
+</html>
